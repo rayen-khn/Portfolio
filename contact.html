@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Mohamed Rayen Kahloun.">
+  <title>Contact | Mohamed Rayen Kahloun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">MR<span class="k">K</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
+        <button class="theme-toggle" aria-label="Toggle dark mode" type="button"></button>
+        <button class="hamburger" aria-label="Open menu" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title reveal" data-i18n-html="contact.title">Get in <span class="accent">Touch</span></h1>
+      <p class="section-subtitle reveal" data-i18n="contact.subtitle">Have a question or an internship opportunity? Send me a message.</p>
+
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/YOUR_ID" method="POST">
+          <div class="form-group">
+            <label for="name" data-i18n="contact.label.name">Name</label>
+            <input type="text" id="name" name="name" data-i18n-placeholder="contact.ph.name" placeholder="Your name" required>
+            <div class="form-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact.label.email">Email</label>
+            <input type="email" id="email" name="email" data-i18n-placeholder="contact.ph.email" placeholder="you@example.com" required>
+            <div class="form-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="subject" data-i18n="contact.label.subject">Subject</label>
+            <input type="text" id="subject" name="subject" data-i18n-placeholder="contact.ph.subject" placeholder="Subject" required>
+            <div class="form-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.label.message">Message</label>
+            <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.ph.message" placeholder="Your message..." required></textarea>
+            <div class="form-error"></div>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" data-i18n="contact.send">Send Message</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+
+        <div class="contact-info reveal">
+          <h3 data-i18n="contact.infoTitle">Contact Information</h3>
+          <div class="contact-card">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></div>
+            <div><h4 data-i18n="contact.email">Email</h4><p>mohamedrayen.kahloun@gmail.com</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><h4 data-i18n="contact.phone">Phone</h4><p>+216 93 486 829</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h4 data-i18n="contact.location">Location</h4><p>Tunisia</p></div>
+          </div>
+
+          <h3 style="margin-top:24px;" data-i18n="contact.socialTitle">Find me online</h3>
+          <div class="social-links-grid">
+            <a href="https://github.com/rayen-khn" target="_blank" rel="noopener" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.79 1.3 3.48 1 .11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.53.12-3.18 0 0 1.01-.33 3.3 1.23a11.5 11.5 0 016 0c2.29-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.23v3.3c0 .32.22.69.83.57A12 12 0 0012 .3"/></svg> GitHub</a>
+            <a href="https://linkedin.com/in/mohamed-rayen-kahloun" target="_blank" rel="noopener" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamedrayen.kahloun@gmail.com" target="_blank" rel="noopener" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.copyright">© 2026 Mohamed Rayen Kahloun.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/rayen-khn" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.79 1.3 3.48 1 .11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.53.12-3.18 0 0 1.01-.33 3.3 1.23a11.5 11.5 0 016 0c2.29-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.23v3.3c0 .32.22.69.83.57A12 12 0 0012 .3"/></svg></a>
+        <a href="https://linkedin.com/in/mohamed-rayen-kahloun" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamedrayen.kahloun@gmail.com" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
